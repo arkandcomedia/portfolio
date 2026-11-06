@@ -77,7 +77,7 @@ export default function HomeHero() {
 
       <div className="banner">
         <div className="banner__img">
-          <Photo src="/img/scene-05.jpg" alt="A venue lit up in pink by ARK for a theme night" fill priority sizes="100vw" />
+          <Photo src="/img/photo-08.jpg" alt="ARK briefing a chef in the lantern courtyard before a theme night" fill priority sizes="100vw" />
         </div>
         <div className="banner__shade" />
         <div className="banner__in">

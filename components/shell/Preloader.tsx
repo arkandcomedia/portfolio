@@ -6,7 +6,7 @@ import { gsap, useGSAP } from "@/lib/gsap";
 const PRELOAD = [
   "/img/scene-07.jpg",
   "/img/scene-02.jpg",
-  "/img/scene-05.jpg",
+  "/img/photo-08.jpg",
   "/img/bamboo.png",
   "/img/slide-01.jpg",
   "/img/slide-02.jpg",
