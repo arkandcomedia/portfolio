@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { gsap, useGSAP, reducedMotion } from "@/lib/gsap";
 import { BELIEFS } from "@/lib/content";
 import { SectionHead } from "../ui/PageHeader";
@@ -48,7 +48,7 @@ export function Impact() {
             </div>
           ))}
           <div className="impact__glass fx-up">
-            <Image src="/img/crop-07.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 30vw" />
+            <Photo src="/img/crop-07.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 30vw" />
             <div><b>Floor to feed</b><span>We build the moment, then we make it famous.</span></div>
           </div>
         </div>
@@ -60,7 +60,7 @@ export function Impact() {
 const TEAM = [
   { img: "/img/crop-02.jpg", role: "Strategy & planning" },
   { img: "/img/crop-06.jpg", role: "Experience & set-up" },
-  { img: "/img/crop-07.jpg", role: "Guest moments" },
+  { img: "/img/photo-09.jpg", role: "Guest moments" },
   { img: "/img/crop-03.jpg", role: "Styling & details" },
 ];
 
@@ -78,7 +78,7 @@ export function Team() {
           </div>
           {TEAM.map((t) => (
             <figure className="team__card fx-up" key={t.role}>
-              <div className="team__img"><Image src={t.img} alt={t.role} fill sizes="(max-width: 900px) 50vw, 20vw" /></div>
+              <div className="team__img"><Photo src={t.img} alt={t.role} fill sizes="(max-width: 900px) 50vw, 20vw" /></div>
               <figcaption><b>Team ARK</b><span>{t.role}</span></figcaption>
             </figure>
           ))}
@@ -102,7 +102,7 @@ export function Beliefs() {
   );
   return (
     <section className="beliefs" ref={root} data-theme="dark">
-      <div className="beliefs__bg"><Image src="/img/crop-05.jpg" alt="" fill sizes="100vw" /></div>
+      <div className="beliefs__bg"><Photo src="/img/crop-05.jpg" alt="" fill sizes="100vw" /></div>
       <div className="container beliefs__in">
         <div className="beliefs__head">
           <SectionHead title="What We Believe" align="split" sub="Five principles behind every venue we work with." />

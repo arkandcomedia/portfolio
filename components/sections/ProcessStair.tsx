@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { gsap, useGSAP, reducedMotion } from "@/lib/gsap";
 import { PROCESS } from "@/lib/content";
 import SplitReveal from "../ui/SplitReveal";
@@ -48,7 +48,7 @@ export default function ProcessStair() {
         <div className="stair__grid">
           {PROCESS.map((p, i) => (
             <article className="stair__card" key={p.n} style={{ ["--i" as string]: i }}>
-              <Image src={p.img} alt="" fill sizes="(max-width: 900px) 100vw, 25vw" />
+              <Photo src={p.img} alt="" fill sizes="(max-width: 900px) 100vw, 25vw" />
               <div className="stair__shade" />
               <span className="stair__num">{p.n}</span>
               <div className="stair__body">

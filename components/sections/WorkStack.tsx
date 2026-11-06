@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { gsap, useGSAP, reducedMotion } from "@/lib/gsap";
 import { WORK } from "@/lib/content";
 import { SectionHead } from "../ui/PageHeader";
@@ -53,7 +53,7 @@ export default function WorkStack({ heading = true }: { heading?: boolean }) {
                 <Btn href={`/work/${w.slug}`} variant="pink" size="sm" arrow>See the case study</Btn>
               </div>
               <div className="wcard__img">
-                <Image src={w.img} alt={w.title} fill sizes="(max-width: 900px) 100vw, 50vw" />
+                <Photo src={w.img} alt={w.title} fill sizes="(max-width: 900px) 100vw, 50vw" />
               </div>
             </div>
           </article>

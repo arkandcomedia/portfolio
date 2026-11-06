@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { gsap, useGSAP, reducedMotion, finePointer } from "@/lib/gsap";
 import { useLoader } from "@/lib/loader-context";
 import { HERO_PILLS, HERO_STATS, TICKER } from "@/lib/content";
@@ -77,7 +77,7 @@ export default function HomeHero() {
 
       <div className="banner">
         <div className="banner__img">
-          <Image src="/img/crop-05.jpg" alt="A venue lit up in pink by ARK for a theme night" fill priority sizes="100vw" />
+          <Photo src="/img/crop-05.jpg" alt="A venue lit up in pink by ARK for a theme night" fill priority sizes="100vw" />
         </div>
         <div className="banner__shade" />
         <div className="banner__in">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import PageHeader from "@/components/ui/PageHeader";
 import Intro from "@/components/sections/Intro";
 import ServicesList from "@/components/sections/ServicesList";
@@ -24,13 +24,13 @@ export default function ServicesPage() {
       <section className="bento">
         <div className="container bento__grid">
           <article className="bento__card bento__card--img fx-up tilt">
-            <Image src="/img/crop-04.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
+            <Photo src="/img/crop-04.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
             <div className="bento__shade" />
             <span className="bento__tag">Experience insight <i>↗</i></span>
             <div className="bento__bottom"><b>Floor to feed</b><span>Moments designed on site, then told online.</span></div>
           </article>
           <article className="bento__card bento__card--img fx-up tilt">
-            <Image src="/img/crop-02.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
+            <Photo src="/img/crop-02.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
             <div className="bento__shade" />
             <span className="bento__tag">Strategy <i>↗</i></span>
             <div className="bento__bottom"><b>Brand & venue growth</b><span>Discover the details, insights and USP that drive real bookings.</span></div>

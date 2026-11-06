@@ -42,12 +42,18 @@ export default function Preloader({ onReveal, onDone }: Props) {
       let cancelled = false;
       let current = -1;
 
-      gsap.set(phrases, { yPercent: 110 });
+      gsap.set(phrases, { yPercent: 110, opacity: 0 });
 
+      // only the outgoing and incoming phrase may move; a still-pending delayed slide-in
+      // from an earlier phrase would otherwise land on top of the new one
       const showPhrase = (i: number) => {
         if (i === current) return;
-        if (current >= 0) gsap.to(phrases[current], { yPercent: -110, duration: 0.45, ease: "expo.in" });
-        gsap.fromTo(phrases[i], { yPercent: 110 }, { yPercent: 0, duration: 0.6, ease: "expo.out", delay: current >= 0 ? 0.2 : 0 });
+        gsap.killTweensOf(phrases);
+        phrases.forEach((p, k) => {
+          if (k !== current && k !== i) gsap.set(p, { yPercent: 110, opacity: 0 });
+        });
+        if (current >= 0) gsap.to(phrases[current], { yPercent: -110, opacity: 0, duration: 0.28, ease: "power2.in" });
+        gsap.fromTo(phrases[i], { yPercent: 110, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.55, ease: "expo.out", delay: current >= 0 ? 0.3 : 0 });
         current = i;
       };
 

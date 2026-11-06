@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { usePathname } from "next/navigation";
 import { gsap, useGSAP, reducedMotion } from "@/lib/gsap";
 import { CONTACT, NAV, ALL_PAGES } from "@/lib/content";
@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <Link href="/" className="footer__logo">
-              ARK<Image src="/img/bamboo.png" alt="" width={143} height={258} /><small>Hospitality</small>
+              ARK<Photo src="/img/bamboo.png" alt="" width={143} height={258} /><small>Hospitality</small>
             </Link>
             <p>ARK is a hospitality marketing & experience studio. We analyse every detail, find your USP and build the brand, the moments and the content that sell it.</p>
           </div>

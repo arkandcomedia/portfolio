@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { gsap, useGSAP, reducedMotion } from "@/lib/gsap";
 import { MOMENTS } from "@/lib/content";
 import SplitReveal from "../ui/SplitReveal";
@@ -33,7 +33,7 @@ export default function Moments() {
 
   const card = (m: (typeof MOMENTS)[number], i: number) => (
     <figure className="mcard" key={m.line}>
-      <div className="mcard__img"><Image src={m.img} alt={m.line} fill sizes="(max-width: 900px) 80vw, 320px" /></div>
+      <div className="mcard__img"><Photo src={m.img} alt={m.line} fill sizes="(max-width: 900px) 80vw, 320px" /></div>
       <figcaption>
         <span className="mcard__stars" aria-hidden="true">✦ ✦ ✦ ✦ ✦</span>
         <b>{m.line}</b>
@@ -44,7 +44,7 @@ export default function Moments() {
 
   return (
     <section className="moments" ref={root} data-theme="dark">
-      <div className="moments__bg"><Image src="/img/crop-04.jpg" alt="" fill sizes="100vw" /></div>
+      <div className="moments__bg"><Photo src="/img/crop-04.jpg" alt="" fill sizes="100vw" /></div>
       <div className="container moments__grid">
         <div className="moments__col moments__col--a">{MOMENTS.filter((_, i) => i % 2 === 0).map((m) => card(m, MOMENTS.indexOf(m)))}</div>
         <div className="moments__center">

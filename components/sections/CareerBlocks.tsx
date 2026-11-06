@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { gsap, useGSAP, reducedMotion } from "@/lib/gsap";
 import { JOBS } from "@/lib/content";
 import { SectionHead } from "../ui/PageHeader";
@@ -31,7 +31,7 @@ export function Positions() {
 const LIFE = [
   { img: "/img/crop-06.jpg", title: "On the floor", text: "We set up what we design. You'll be there when the lights go on." },
   { img: "/img/crop-02.jpg", title: "Ideas first", text: "Every project starts with imagination, a laptop and a good view." },
-  { img: "/img/crop-07.jpg", title: "Close to guests", text: "We talk to the people we're designing for, not just about them." },
+  { img: "/img/photo-08.jpg", title: "Close to guests", text: "We talk to the people we're designing for, not just about them." },
 ];
 
 export function LifeAtArk() {
@@ -59,7 +59,7 @@ export function LifeAtArk() {
         <div className="life__cards">
           {LIFE.map((l) => (
             <figure className="life__card" key={l.title}>
-              <div className="life__img"><Image src={l.img} alt={l.title} fill sizes="(max-width: 900px) 100vw, 45vw" /></div>
+              <div className="life__img"><Photo src={l.img} alt={l.title} fill sizes="(max-width: 900px) 100vw, 45vw" /></div>
               <figcaption><b>{l.title}</b><span>{l.text}</span></figcaption>
             </figure>
           ))}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { WORK } from "@/lib/content";
@@ -38,7 +38,7 @@ export default async function WorkDetail({ params }: Params) {
         </div>
         <div className="container">
           <div className="case-cover fx-clip">
-            <Image src={w.cover} alt={w.title} fill priority sizes="(max-width: 1360px) 100vw, 1300px" data-parallax="8" />
+            <Photo src={w.cover} alt={w.title} fill priority sizes="(max-width: 1360px) 100vw, 1300px" data-parallax="6" />
           </div>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default async function WorkDetail({ params }: Params) {
           <div className={`case-gallery${portrait ? " case-gallery--portrait" : ""}`}>
             {w.gallery.map((g) => (
               <div className="case-gallery__item fx-scale" key={g}>
-                <Image src={g} alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
+                <Photo src={g} alt="" fill sizes="(max-width: 900px) 100vw, 33vw" />
               </div>
             ))}
           </div>

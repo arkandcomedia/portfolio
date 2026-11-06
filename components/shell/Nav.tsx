@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { usePathname } from "next/navigation";
 import { gsap, useGSAP, ScrollTrigger } from "@/lib/gsap";
 import { useLoader } from "@/lib/loader-context";
@@ -69,7 +69,7 @@ export default function Nav() {
       <header className="nav" ref={nav}>
         <Link href="/" className="nav__logo" aria-label="ARK Hospitality home">
           <span className="nav__ark">ARK</span>
-          <Image src="/img/bamboo.png" alt="" width={143} height={258} className="nav__bamboo" priority />
+          <Photo src="/img/bamboo.png" alt="" width={143} height={258} className="nav__bamboo" priority />
           <span className="nav__hosp">Hospitality</span>
         </Link>
 

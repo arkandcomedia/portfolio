@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { useSearchParams } from "next/navigation";
 import { CONTACT, SERVICE_OPTIONS } from "@/lib/content";
 import { useEnquiry, formFields } from "@/lib/use-enquiry";
@@ -63,7 +63,7 @@ export function ContactForm() {
           {status === "sent" && <p className="form-msg">Thanks! Your message reached ARK. We reply within 24 hours.</p>}
         </form>
         <div className="contact__img fx-clip">
-          <Image src="/img/crop-02.jpg" alt="ARK planning a venue experience" fill priority sizes="(max-width: 900px) 100vw, 45vw" data-parallax="6" />
+          <Photo src="/img/photo-08.jpg" alt="ARK briefing a chef before a theme night" fill priority sizes="(max-width: 900px) 100vw, 45vw" data-parallax="6" />
         </div>
       </div>
     </section>

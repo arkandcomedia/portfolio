@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import Link from "next/link";
 import { POSTS } from "@/lib/content";
 import { SectionHead } from "../ui/PageHeader";
@@ -23,7 +23,7 @@ export default function BlogGrid({ variant = "home" }: { variant?: "home" | "all
           <Btn href="/blog" variant="pink" size="sm" arrow>See all articles</Btn>
         </SectionHead>
         <Link href={`/blog/${feat.slug}`} className="post-feat fx-up" data-cursor="Read">
-          <div className="post-feat__img"><Image src={feat.img} alt="" fill sizes="(max-width: 900px) 100vw, 45vw" /></div>
+          <div className="post-feat__img"><Photo src={feat.img} alt="" fill sizes="(max-width: 900px) 100vw, 45vw" /></div>
           <div className="post-feat__body">
             <span className="chip"><i />{feat.category}</span>
             <h3>{feat.title}</h3>
@@ -43,7 +43,7 @@ function Card({ p }: { p: (typeof POSTS)[number] }) {
   return (
     <Link href={`/blog/${p.slug}`} className="post fx-up" data-cursor="Read">
       <div className="post__img">
-        <Image src={p.img} alt="" fill sizes="(max-width: 900px) 100vw, 40vw" />
+        <Photo src={p.img} alt="" fill sizes="(max-width: 900px) 100vw, 40vw" />
         <span className="chip"><i />{p.category}</span>
       </div>
       <h3>{p.title}</h3>

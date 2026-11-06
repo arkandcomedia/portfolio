@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import Photo from "@/components/ui/Photo";
 import { gsap, ScrollTrigger, finePointer } from "@/lib/gsap";
 import { SERVICES } from "@/lib/content";
 import { SectionHead } from "../ui/PageHeader";
@@ -56,7 +56,7 @@ export default function ServicesList({ heading = true }: { heading?: boolean }) 
               <div className="srv__panel">
                 <div className="srv__panel-in">
                   <div className="srv__img">
-                    <Image src={s.img} alt="" fill sizes="(max-width: 900px) 100vw, 300px" />
+                    <Photo src={s.img} alt="" fill sizes="(max-width: 900px) 100vw, 300px" />
                   </div>
                   <div className="srv__info">
                     <h4>{s.lead}</h4>

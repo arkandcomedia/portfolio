@@ -165,7 +165,7 @@ export const SERVICES: Service[] = [
     slug: "launches-relaunches",
     title: "Launches & Relaunches",
     category: "Strategy Service",
-    img: "/img/crop-07.jpg",
+    img: "/img/photo-08.jpg",
     lead: "Full house on day one",
     text: "New opening or a fresh chapter: one playbook from pre-launch buzz to a full house on day one.",
     items: ["Pre-launch teasers", "Influencer previews", "Opening-night experience"],
@@ -261,7 +261,7 @@ export const WORK: Work[] = [
     category: "Production",
     period: "Halloween season",
     img: "/img/crop-06.jpg",
-    cover: "/img/crop-07.jpg",
+    cover: "/img/photo-09.jpg",
     summary:
       "Good experiences take a team. A look at the planning, set-up and the people who turned the concept into a finished venue.",
     facts: [
@@ -278,7 +278,7 @@ export const WORK: Work[] = [
       "Set-up: our team handled the build, from the entrance installation to the last bat on the wall.",
       "Hand-over: a quick walkthrough so Vayu's staff knew the story behind the theme and could share it with guests.",
     ],
-    gallery: ["/img/crop-06.jpg", "/img/crop-02.jpg", "/img/crop-07.jpg"],
+    gallery: ["/img/crop-06.jpg", "/img/crop-02.jpg", "/img/photo-08.jpg"],
     outcome: ["A smooth opening with zero last-minute scrambling, and a team that could focus on hospitality."],
   },
 ];
@@ -418,7 +418,7 @@ export const POSTS: Post[] = [
     title: "From Floor to Feed: Turning Experiences into Content",
     excerpt: "Why the best hospitality content starts with something real happening on the floor.",
     category: "Content",
-    img: "/img/crop-07.jpg",
+    img: "/img/photo-08.jpg",
     read: "5 min read",
     body: [
       { h: "Content can't fix an empty moment", p: ["You can't edit your way to a great experience. If nothing special is happening in the venue, the feed will show it."] },
