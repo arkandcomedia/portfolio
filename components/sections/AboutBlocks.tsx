@@ -48,7 +48,7 @@ export function Impact() {
             </div>
           ))}
           <div className="impact__glass fx-up">
-            <Photo src="/img/crop-07.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 30vw" />
+            <Photo src="/img/scene-07.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 30vw" />
             <div><b>Floor to feed</b><span>We build the moment, then we make it famous.</span></div>
           </div>
         </div>
@@ -58,10 +58,10 @@ export function Impact() {
 }
 
 const TEAM = [
-  { img: "/img/crop-02.jpg", role: "Strategy & planning" },
-  { img: "/img/crop-06.jpg", role: "Experience & set-up" },
+  { img: "/img/scene-02.jpg", role: "Strategy & planning" },
+  { img: "/img/scene-06.jpg", role: "Experience & set-up" },
   { img: "/img/photo-09.jpg", role: "Guest moments" },
-  { img: "/img/crop-03.jpg", role: "Styling & details" },
+  { img: "/img/scene-03.jpg", role: "Styling & details" },
 ];
 
 export function Team() {
@@ -102,7 +102,7 @@ export function Beliefs() {
   );
   return (
     <section className="beliefs" ref={root} data-theme="dark">
-      <div className="beliefs__bg"><Photo src="/img/crop-05.jpg" alt="" fill sizes="100vw" /></div>
+      <div className="beliefs__bg"><Photo src="/img/scene-05.jpg" alt="" fill sizes="100vw" /></div>
       <div className="container beliefs__in">
         <div className="beliefs__head">
           <SectionHead title="What We Believe" align="split" sub="Five principles behind every venue we work with." />

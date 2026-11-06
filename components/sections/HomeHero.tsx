@@ -33,7 +33,7 @@ export default function HomeHero() {
         .to(q(".hero-top > *"), { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", stagger: 0.1 })
         .to(q(".giant__l"), { yPercent: 0, duration: 1.3, ease: "expo.out", stagger: 0.05 }, 0.05)
         .to(q(".banner"), { clipPath: "inset(0% 0% 0% 0%)", duration: 1.4, ease: "expo.inOut" }, 0.45)
-        .to(q(".banner__img"), { scale: 1.08, duration: 2, ease: "expo.out" }, 0.6)
+        .to(q(".banner__img"), { scale: 1, duration: 2, ease: "expo.out" }, 0.6)
         .to(q(".banner__in > *"), { opacity: 1, y: 0, duration: 1, ease: "expo.out", stagger: 0.08 }, 1.1)
         .to(q(".ticker"), { opacity: 1, duration: 1 }, 1.3);
 
@@ -77,7 +77,7 @@ export default function HomeHero() {
 
       <div className="banner">
         <div className="banner__img">
-          <Photo src="/img/crop-05.jpg" alt="A venue lit up in pink by ARK for a theme night" fill priority sizes="100vw" />
+          <Photo src="/img/scene-05.jpg" alt="A venue lit up in pink by ARK for a theme night" fill priority sizes="100vw" />
         </div>
         <div className="banner__shade" />
         <div className="banner__in">

@@ -65,25 +65,25 @@ export const PROCESS = [
     n: "01",
     title: "Analyse",
     text: "We study your venue, menu, reviews, competitors and local trends, and every guest touchpoint in between.",
-    img: "/img/crop-02.jpg",
+    img: "/img/scene-02.jpg",
   },
   {
     n: "02",
     title: "Find the USP",
     text: "We dig through the details until we find the one thing only you can offer, then sharpen it into a story.",
-    img: "/img/crop-03.jpg",
+    img: "/img/scene-03.jpg",
   },
   {
     n: "03",
     title: "Design the moment",
     text: "Themed nights, décor, lighting and service touches, planned and set up by our own team.",
-    img: "/img/crop-04.jpg",
+    img: "/img/scene-04.jpg",
   },
   {
     n: "04",
     title: "Amplify",
     text: "We capture it, post it and promote it, then track reservations, footfall and repeat visits.",
-    img: "/img/crop-01.jpg",
+    img: "/img/scene-01.jpg",
   },
 ];
 
@@ -120,7 +120,7 @@ export const SERVICES: Service[] = [
     slug: "hospitality-marketing",
     title: "Hospitality Marketing",
     category: "Growth Service",
-    img: "/img/crop-02.jpg",
+    img: "/img/scene-02.jpg",
     lead: "Always-on growth",
     text: "Always-on marketing built around how guests actually choose where to eat, drink and stay.",
     items: ["Footfall campaigns", "Google & review strategy", "Festive calendars"],
@@ -138,7 +138,7 @@ export const SERVICES: Service[] = [
     slug: "experience-event-design",
     title: "Experience & Event Design",
     category: "On-ground Service",
-    img: "/img/crop-04.jpg",
+    img: "/img/scene-04.jpg",
     lead: "Moments guests photograph",
     text: "Theme nights, festive takeovers and ambience upgrades, designed, sourced and set up by our team.",
     items: ["Concepts & mood boards", "Décor, lighting & styling", "Event production"],
@@ -147,7 +147,7 @@ export const SERVICES: Service[] = [
     slug: "social-media-content",
     title: "Social Media & Content",
     category: "Content Service",
-    img: "/img/crop-06.jpg",
+    img: "/img/scene-06.jpg",
     lead: "Posts people save",
     text: "Reels, carousels and stories that make people save the post and book the table.",
     items: ["Content calendars", "On-site shoots", "Community management"],
@@ -156,7 +156,7 @@ export const SERVICES: Service[] = [
     slug: "trend-growth-analytics",
     title: "Trend & Growth Analytics",
     category: "Data Service",
-    img: "/img/crop-03.jpg",
+    img: "/img/scene-03.jpg",
     lead: "Decisions backed by data",
     text: "We track the details others skip, so every decision is backed by what your guests are doing.",
     items: ["Trend reports", "Campaign tracking", "Guest feedback analysis"],
@@ -197,8 +197,8 @@ export const WORK: Work[] = [
     services: ["Experience Design", "Styling"],
     category: "Experience Design",
     period: "Halloween season",
-    img: "/img/crop-04.jpg",
-    cover: "/img/crop-05.jpg",
+    img: "/img/scene-04.jpg",
+    cover: "/img/scene-05.jpg",
     summary:
       "A complete theme takeover: concept, décor, lighting and on-ground set-up that turned a dining space into a night guests talked about.",
     facts: [
@@ -217,7 +217,7 @@ export const WORK: Work[] = [
       "Details: skulls, chalkboards, pumpkins and bats placed where guests naturally pause, so every corner had a photo moment.",
       "Set-up: our team installed everything on site, from the entrance reaper to the final finishing touch.",
     ],
-    gallery: ["/img/crop-04.jpg", "/img/crop-03.jpg", "/img/crop-05.jpg", "/img/crop-01.jpg"],
+    gallery: ["/img/scene-04.jpg", "/img/scene-03.jpg", "/img/scene-05.jpg", "/img/scene-01.jpg"],
     outcome: [
       "A venue that felt like an event for the whole season, not just one night.",
       "A ready-made library of on-brand moments for Vayu's social channels.",
@@ -230,8 +230,8 @@ export const WORK: Work[] = [
     services: ["Social & Content", "Copywriting"],
     category: "Content",
     period: "Halloween season",
-    img: "/img/slide-01.jpg",
-    cover: "/img/crop-01.jpg",
+    img: "/img/scene-01.jpg",
+    cover: "/img/scene-01.jpg",
     summary:
       "A seven-slide carousel that walked followers through the whole experience: from the first idea to the people who made it happen.",
     facts: [
@@ -260,7 +260,7 @@ export const WORK: Work[] = [
     services: ["Planning", "On-ground Team"],
     category: "Production",
     period: "Halloween season",
-    img: "/img/crop-06.jpg",
+    img: "/img/scene-06.jpg",
     cover: "/img/photo-09.jpg",
     summary:
       "Good experiences take a team. A look at the planning, set-up and the people who turned the concept into a finished venue.",
@@ -278,7 +278,7 @@ export const WORK: Work[] = [
       "Set-up: our team handled the build, from the entrance installation to the last bat on the wall.",
       "Hand-over: a quick walkthrough so Vayu's staff knew the story behind the theme and could share it with guests.",
     ],
-    gallery: ["/img/crop-06.jpg", "/img/crop-02.jpg", "/img/photo-08.jpg"],
+    gallery: ["/img/scene-06.jpg", "/img/scene-02.jpg", "/img/photo-08.jpg"],
     outcome: ["A smooth opening with zero last-minute scrambling, and a team that could focus on hospitality."],
   },
 ];
@@ -376,7 +376,7 @@ export const POSTS: Post[] = [
     title: "Small Details, Big Impact: What Guests Actually Remember",
     excerpt: "Guests rarely remember the menu font. They remember the moment. Here's how to design for it.",
     category: "Experience Design",
-    img: "/img/crop-03.jpg",
+    img: "/img/scene-03.jpg",
     read: "5 min read",
     body: [
       { h: "Guests remember moments, not floor plans", p: ["Ask someone about a great night out and they won't describe the layout. They'll tell you about the candle on the table, the way the host remembered their name, or the corner they took a photo in.", "Those small, deliberate details are what turn a visit into a memory, and a memory into a recommendation."] },
@@ -390,7 +390,7 @@ export const POSTS: Post[] = [
     title: "Finding Your USP: What Makes a Venue Unforgettable",
     excerpt: "A view, a story or a vibe. How to pick the one thing only you have, and own it.",
     category: "Brand Strategy",
-    img: "/img/crop-05.jpg",
+    img: "/img/scene-05.jpg",
     read: "6 min read",
     body: [
       { h: "The problem: trying to be everything", p: ["Most venues describe themselves the same way: great food, great ambience, great service. When everyone says it, nobody hears it.", "A USP is not a list of good things. It's the one thing guests can't get anywhere else."] },
@@ -404,7 +404,7 @@ export const POSTS: Post[] = [
     title: "Theme Nights That Pay for Themselves",
     excerpt: "Planning festive takeovers that drive footfall, not just likes.",
     category: "Marketing",
-    img: "/img/crop-06.jpg",
+    img: "/img/scene-06.jpg",
     read: "4 min read",
     body: [
       { h: "Start with the guest, not the theme", p: ["A theme only works if it gives a specific group of guests a reason to come that week. Decide who you're inviting before you decide what to hang on the walls."] },

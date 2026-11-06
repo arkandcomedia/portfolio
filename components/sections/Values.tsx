@@ -15,7 +15,7 @@ export default function Values() {
         <SectionHead title="Our Values" align="split" sub="We fuel bold ideas and drive them forward with sharp strategy." />
         <div className="values__grid">
           <div className="values__img fx-clip">
-            <Photo src="/img/crop-06.jpg" alt="The ARK team setting up a venue" fill sizes="(max-width: 900px) 100vw, 45vw" data-parallax="6" />
+            <Photo src="/img/scene-06.jpg" alt="The ARK team setting up a venue" fill sizes="(max-width: 900px) 100vw, 45vw" />
           </div>
           {VALUES.map((v) => (
             <div className="value fx-up" key={v.title}>

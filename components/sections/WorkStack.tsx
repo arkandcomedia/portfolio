@@ -19,15 +19,11 @@ export default function WorkStack({ heading = true }: { heading?: boolean }) {
         const next = cards[i + 1];
         if (!next) return;
         gsap.to(card.querySelector(".wcard__in"), {
-          scale: 0.92,
-          opacity: 0.55,
+          scale: 0.93,
           ease: "none",
           scrollTrigger: { trigger: next, start: "top bottom", end: "top 18%", scrub: true },
         });
       });
-      gsap.utils.toArray<HTMLElement>(".wcard__img img").forEach((img) =>
-        gsap.fromTo(img, { scale: 1.2 }, { scale: 1, ease: "none", scrollTrigger: { trigger: img, start: "top bottom", end: "center center", scrub: true } })
-      );
     },
     { scope: root }
   );

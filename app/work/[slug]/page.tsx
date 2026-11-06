@@ -38,7 +38,7 @@ export default async function WorkDetail({ params }: Params) {
         </div>
         <div className="container">
           <div className="case-cover fx-clip">
-            <Photo src={w.cover} alt={w.title} fill priority sizes="(max-width: 1360px) 100vw, 1300px" data-parallax="6" />
+            <Photo src={w.cover} alt={w.title} fill priority sizes="(max-width: 1360px) 100vw, 1300px" />
           </div>
         </div>
       </section>

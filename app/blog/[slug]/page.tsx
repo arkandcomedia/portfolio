@@ -32,7 +32,7 @@ export default async function BlogPost({ params }: Params) {
           <SplitReveal as="h1" className="post-head__title">{post.title}</SplitReveal>
           <p className="post-head__sub fx-up">{post.excerpt}</p>
           <div className="post-head__img fx-clip">
-            <Photo src={post.img} alt="" fill priority sizes="(max-width: 1360px) 100vw, 1300px" data-parallax="6" />
+            <Photo src={post.img} alt="" fill priority sizes="(max-width: 1360px) 100vw, 1300px" />
           </div>
           <div className="post-head__meta fx-up">
             <span>{post.read}</span>

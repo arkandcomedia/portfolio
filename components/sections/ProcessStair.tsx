@@ -48,9 +48,11 @@ export default function ProcessStair() {
         <div className="stair__grid">
           {PROCESS.map((p, i) => (
             <article className="stair__card" key={p.n} style={{ ["--i" as string]: i }}>
-              <Photo src={p.img} alt="" fill sizes="(max-width: 900px) 100vw, 25vw" />
-              <div className="stair__shade" />
-              <span className="stair__num">{p.n}</span>
+              <div className="stair__media">
+                <Photo src={p.img} alt="" fill sizes="(max-width: 900px) 100vw, 25vw" />
+                <div className="stair__shade" />
+                <span className="stair__num">{p.n}</span>
+              </div>
               <div className="stair__body">
                 <h3>{p.title}</h3>
                 <p>{p.text}</p>

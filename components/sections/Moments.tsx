@@ -44,7 +44,7 @@ export default function Moments() {
 
   return (
     <section className="moments" ref={root} data-theme="dark">
-      <div className="moments__bg"><Photo src="/img/crop-04.jpg" alt="" fill sizes="100vw" /></div>
+      <div className="moments__bg"><Photo src="/img/scene-04.jpg" alt="" fill sizes="100vw" /></div>
       <div className="container moments__grid">
         <div className="moments__col moments__col--a">{MOMENTS.filter((_, i) => i % 2 === 0).map((m) => card(m, MOMENTS.indexOf(m)))}</div>
         <div className="moments__center">

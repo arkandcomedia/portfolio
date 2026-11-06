@@ -63,7 +63,7 @@ export function ContactForm() {
           {status === "sent" && <p className="form-msg">Thanks! Your message reached ARK. We reply within 24 hours.</p>}
         </form>
         <div className="contact__img fx-clip">
-          <Photo src="/img/photo-08.jpg" alt="ARK briefing a chef before a theme night" fill priority sizes="(max-width: 900px) 100vw, 45vw" data-parallax="6" />
+          <Photo src="/img/photo-08.jpg" alt="ARK briefing a chef before a theme night" fill priority sizes="(max-width: 900px) 100vw, 45vw" />
         </div>
       </div>
     </section>

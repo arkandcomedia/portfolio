@@ -4,9 +4,9 @@ import { useRef } from "react";
 import { gsap, useGSAP } from "@/lib/gsap";
 
 const PRELOAD = [
-  "/img/crop-07.jpg",
-  "/img/crop-02.jpg",
-  "/img/crop-05.jpg",
+  "/img/scene-07.jpg",
+  "/img/scene-02.jpg",
+  "/img/scene-05.jpg",
   "/img/bamboo.png",
   "/img/slide-01.jpg",
   "/img/slide-02.jpg",

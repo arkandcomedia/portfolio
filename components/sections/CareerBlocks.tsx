@@ -29,8 +29,8 @@ export function Positions() {
 }
 
 const LIFE = [
-  { img: "/img/crop-06.jpg", title: "On the floor", text: "We set up what we design. You'll be there when the lights go on." },
-  { img: "/img/crop-02.jpg", title: "Ideas first", text: "Every project starts with imagination, a laptop and a good view." },
+  { img: "/img/scene-06.jpg", title: "On the floor", text: "We set up what we design. You'll be there when the lights go on." },
+  { img: "/img/scene-02.jpg", title: "Ideas first", text: "Every project starts with imagination, a laptop and a good view." },
   { img: "/img/photo-08.jpg", title: "Close to guests", text: "We talk to the people we're designing for, not just about them." },
 ];
 
